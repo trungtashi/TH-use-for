@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Thực hành] Sử dụng vòng lặp for - exe02</title>
+</head>
+<body>
+    <label for="">
+        <input type="number" name="" id="number">
+    </label>
+    <label for="">
+        <input type="button" value="Total" onclick="total()">
+    </label>
+    <p id="result"></p>
+    <script>
+       function total(){
+            let number = Number(document.getElementById('number').value)
+            let total = 0
+            for( let i = 1; i < number; i++){
+                total += i
+            }
+            document.getElementById('result').innerHTML = total
+       }
+    </script>
+</body>
+</html>
